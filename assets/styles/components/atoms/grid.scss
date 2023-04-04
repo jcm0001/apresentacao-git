@@ -1,0 +1,8 @@
+.container {
+  padding: 0rem 1.438rem;
+  @include for-size(screen-grid) {
+    padding: 0;
+    max-width: 73.125rem;
+    margin: 0 auto;
+  }
+}

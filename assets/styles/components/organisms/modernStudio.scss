@@ -1,0 +1,59 @@
+$gap-itens: 1.5rem;
+
+.modernStudio {
+  background-color: $color-primary;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 3.5rem 0;
+
+  @include for-size(screen-md) {
+    padding: 6.375rem 0 3.5rem 0;
+  }
+
+  &__container {
+    @include for-size(screen-lg) {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 5.438rem;
+    }
+  }
+  
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-itens;
+
+    @include for-size($screen-md) {
+      width: 32.063rem;
+    }
+
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2.75rem;
+    max-width: 22rem;
+  }
+
+
+  &__quote {
+    display: flex;
+    gap: $gap-itens;
+    width: 100%;
+    @include for-size(screen-md) {
+      padding: 0;
+    }
+  }
+
+  &__quoteText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+}

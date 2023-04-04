@@ -1,0 +1,75 @@
+.accordion {
+  &__item {
+    @include border($radius: 0, $color: $color-brown--light);
+    padding: 2.563rem 1.75rem 2.375rem 1.75rem;
+
+    &:first-child {
+      border-radius: 0.375rem 0.375rem 0 0;
+    }
+
+    &:nth-child(2), &:nth-child(4) {
+      border-top: none;
+    }
+
+    &:last-child {
+      border-radius: 0 0 0.375rem 0.375rem;
+    }
+
+    &[open] {
+      background-color: $color-white;
+      @include transition();
+
+      .accordion__header {
+        margin-bottom: 2.188rem;
+      }
+
+      .accordion__btn {
+        rotate: 180deg;
+      }
+    }
+  }
+
+
+  &__title {
+    max-width: 80%;
+  }
+
+  &__header {
+    @include typography();
+    cursor: pointer;
+    color: $color-brown;  
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    position: relative;
+  }
+}
+
+// Passar para class
+
+// summary {
+//   @include typography();
+//   cursor: pointer;
+//   color: $color-brown;  
+//   display: flex;
+//   justify-content: space-between;
+//   gap: 1rem;
+//   position: relative;
+// }
+
+// details {
+//   padding: 2.563rem 1.75rem 2.375rem 1.75rem;
+// }
+
+// details[open] {
+//   background-color: $color-white;
+//   @include transition();
+// }
+
+// details[open] summary {
+//   margin-bottom: 2.188rem;
+// }
+
+// details[open] .accordion__btn {
+//   rotate: 180deg;
+// }

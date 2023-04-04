@@ -1,0 +1,16 @@
+@mixin border($radius: 0.375rem, $style: solid, $color: rgba(255, 255, 255, 0.295743)) {
+  border: {
+    radius: $radius;
+    width: 0.063rem;
+    style: $style;
+    color: $color;
+  }
+}
+
+@mixin border-top($style: solid) {
+  border-top: 0.063rem $style #F3D1BF;
+}
+
+@mixin border-bottom($style: solid) {
+  border-bottom: 0.063rem solid #F3D1BF;
+}

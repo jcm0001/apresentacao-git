@@ -1,0 +1,21 @@
+@mixin flexClumReverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.headings {
+  &--reverse1 {
+    @include flexClumReverse();
+    gap: 1.5rem;
+  }
+
+  &--reverse2 {
+    @include flexClumReverse();
+    gap: 1.25rem;
+  }
+
+  &--reverse3 {
+    @include flexClumReverse();
+    gap: 1.063rem;
+  }
+}
