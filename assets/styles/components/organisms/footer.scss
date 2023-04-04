@@ -1,0 +1,75 @@
+@mixin boxFooter {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.footer {
+  background-color: $color-secondary;
+  padding: 7.563rem 0;
+  
+  &__top {
+    @include boxFooter();
+    margin-bottom: 4rem;
+    @include for-size(screen-md) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @include for-size(screen-md) {
+      margin-bottom: 4.25rem;
+    }
+  }
+
+  &__header {
+    margin-bottom: 1rem;
+    @include for-size(screen-md) {
+      display: flex;
+    }
+  }
+
+  &__bottom {
+    @include border-top();
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    padding-top: 2.688rem;
+    
+    @include for-size(screen-md) {
+      padding: 0;
+      padding-top: 2.688rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__copyright {
+    @include typography($color: $color-brown);
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    align-items: center;
+    @include for-size(screen-md) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &__termsPolicy {
+    @include typography($color: $color-brown--dark);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    @include for-size(screen-md) {
+      align-items: center;
+      gap: 4.25rem;
+    }
+  }
+
+  &__socialMedia {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}

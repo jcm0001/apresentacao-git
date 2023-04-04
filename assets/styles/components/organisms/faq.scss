@@ -1,0 +1,40 @@
+.faq {
+  background-color: $color-secondary;
+  padding: 5.75rem 0;
+ @include for-size(screen-md) {
+    padding: 11rem 0 9.75rem 0;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+   @include for-size(screen-md) {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      gap: 8.125rem;
+    }
+  }
+
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.938rem;
+   @include for-size(screen-md) {
+      width: 50%;
+    }
+  }
+
+  &__accordion {
+    width: 100%;
+
+   @include for-size(screen-md) {
+      width: 50%;
+    }
+  }
+
+  &__contact {
+    margin: 2rem 0 2.25rem 0;
+  }
+}

@@ -1,0 +1,23 @@
+@mixin backgroundOrange($size) {
+  width: $size;
+  height: $size;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: $color-tertiary;
+}
+
+.icon {
+  @include backgroundOrange($size: 3rem);
+
+  &--small {
+    @include backgroundOrange($size: 2rem);
+    padding: 0.625rem;
+  }
+  
+  &:hover {
+    @include hoverScale();
+    @include boxShadow();
+  }
+}

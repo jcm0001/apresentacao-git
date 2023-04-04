@@ -1,0 +1,31 @@
+// colors
+  $color-white: #fff;
+  $color-black: #000;
+  $color-gray: #B2B2BA;
+  $color-gray--dark: #80695C;
+  $color-brown--light: #F3D1BF;
+  $color-brown: #806354;
+  $color-brown--dark: #391400;
+
+  $color-primary: #28293E;
+  $color-secondary: #FDF0E9;
+  $color-tertiary: #EF6D58;
+  
+  $shadow-primary: rgba(99, 99, 99, 0.2);
+  $shadow-secondary: rgba(0, 0, 0, 0.05);
+
+// breakpoints
+  // Small tablets and large smartphones (landscape view)
+  $screen-sm: 32.813rem;
+
+  // Small tablets (portrait view)
+  $screen-md: 48rem;
+
+  // Tablets and small desktops
+  $screen-lg: 60.5rem;
+
+  // Large tablets and desktops
+  $screen-xl: 72.5rem;
+
+  // Large tablets and desktops
+  $screen-grid: 81.563rem;

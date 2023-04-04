@@ -1,26 +1,227 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/styles/components/main.scss" />
-    <title>Mundo mágico do Front End</title>
-  </head>
-  <body>
-    <header class="header">
-      <nav class="box">
-        <div class="header__logo">
-          <img src="./assets/images/logo.svg" alt="" />
-        </div>
-        <ul class="header__list">
-          <li class="header__item"><a href="">About</a></li>
-          <li class="header__item"><a href="">Services</a></li>
-          <li class="header__item"><a href="">Pricing</a></li>
-          <li class="header__item"><a href="">Blog</a></li>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/images/logo.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="./assets/styles/components/main.scss">
+  <title>Mundo mágico do Front End</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar container">
+      <a title="Go to home page" href="#" class="nav__logo"><img src="./assets/images/logo.svg" alt="Agency"></a>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="nav__menu">
+        <ul class="nav__items">
+          <li class="nav__item">
+            <a href="#" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Pricing</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Blog</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="button button--border">Contact</a>
+          </li>
         </ul>
-        <button class="button">Contact</button>
-      </nav>
-    </header>
-  </body>
+      </div>
+    </nav>
+  </header>
+
+  <main class="modernStudio">
+    <div class="container">
+      <div class="modernStudio__box modernStudio__container">
+        <picture>
+          <source class="modernStudio__img--large" srcset="./assets/images/modernStudio-large.svg" media="(min-width: 968px)">
+          <img class="modernStudio__img" src="./assets/images/modernStudio.svg" alt=""> 
+        </picture>
+        
+        <div class="modernStudio__text">
+          <header class="headings--reverse1">
+            <h1 class="title title--white">We’re Help To Build Your Dream Project</h1>
+            <h2 class="title title--5">morden studio</h2>
+          </header>
+          <p class="text text--gray">Agency provides a full service range including technical skills, design, business understanding.</p>
+          <div class="modernStudio__buttons">
+            <!-- renomear -->
+            <a class="button button--secundary">How We Work</a>
+            <a class="button">Contact Us</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="modernStudio__quote">
+        <img class="modernStudio__quoteImg" src="./assets/images/people/person1.svg" alt="">
+        <div class="modernStudio__quoteText">
+          <p class="text--gray ">"Put themselves in the merchant's shoes"</p>
+          <p class="text--white">Meta Inc.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="faq">
+    <div class="faq__box container">
+      <div class="faq__text">
+        <header class="headings--reverse3">
+          <h2 class="title title--3">Frequently Asked Questions</h2>
+          <h3 class="title title--5">Faq</h3>
+        </header>
+        <p class="text">A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
+        <p class="text--brownDark faq__contact">Contact Us</p>
+      </div>
+  
+      <div class="faq__accordion accordion">
+        <details class="accordion__item" open>
+          <summary class="accordion__header">
+            <p class="accordion__title title title--4">A digital agency is a business</p>
+            <img title="Open collapse" class="accordion__btn icon icon--small" loading="lazy" src="./assets/images/arrow.svg" alt="">
+          </summary>
+          <p class="text">Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.</p>
+        </details>
+  
+        <details class="accordion__item">
+          <summary class="accordion__header">
+            <p class="accordion__title title title--4">Hire to outsource your digital</p>
+            <img title="Open collapse" class="accordion__btn icon icon--small" loading="lazy" src="./assets/images/arrow.svg" alt="">
+          </summary>
+          <p class="text">Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.</p>
+        </details>
+  
+        <details class="accordion__item">
+          <summary class="accordion__header">
+            <p class="accordion__title title title--4">Marketing efforts</p>
+            <img title="Open collapse" class="accordion__btn icon icon--small" loading="lazy" src="./assets/images/arrow.svg" alt="">
+          </summary>
+          <p class="text">Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.</p>
+        </details>
+  
+        <details class="accordion__item">
+          <summary class="accordion__header">
+            <p class="accordion__title title title--4">Can provide your business</p>
+            <img title="Open collapse" class="accordion__btn icon icon--small" loading="lazy" src="./assets/images/arrow.svg" alt="">
+          </summary>
+          <p class="text">Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog">
+    <div class="container">
+      <div class="blog__header">
+        <header class="headings--reverse2 blog__text">
+          <h2 class="title title--3">Latest Blog Articles</h2>
+          <h5 class="title title--5">Our Blog</h5>
+        </header>
+
+        <button class="button--white">Discover All</button>
+      </div>
+  
+      <ul class="blog__cards">
+        <li>
+          <a class="blog__card">
+            <img src="./assets/images/blog/blog1.svg" alt="">
+            <p class="text text--big">Stories</p>
+            <h4 class="blog__title title title--4">Agency is a business you hire to outsource</h4>
+            <p class="text">5 Nov, 2021</p>
+          </a>
+        </li>
+        
+        <li>
+          <a class="blog__card">
+            <img src="./assets/images/blog/blog2.svg" alt="">
+            <p class="text text--big">Design</p>
+            <h4 class="blog__title title title--4">Agency is a business you hire to outsource</h4>
+            <p class="text">5 Nov, 2021</p>
+          </a>
+        </li>
+        
+        <li>
+          <a class="blog__card">
+            <img src="./assets/images/blog/blog3.svg" alt="">
+            <p class="text text--big">Marketing</p>
+            <h4 class="blog__title title title--4">Agency is a business you hire to outsource</h4>
+            <p class="text">5 Nov, 2021</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer ">
+    <div class="container">
+      <div class="footer__top">
+        <h2 class="title--4">Agency</h2>
+        <div class="footer__nav">
+          <h5 class="title--5  footer__header">Menu</h5>
+          <ul class=" nav__items--row">
+            <li class="nav__item">
+              <a href="#" class="nav__link--dark">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link--dark">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link--dark">Pricing</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link--dark">Blog</a>
+          </ul>
+        </div>
+    
+        <div class="footer__nav">
+          <h5 class="title--5 footer__header">Service</h5>
+          <ul class=" nav__items--row">
+            <li class="nav__item">
+              <a href="#" class="nav__link--dark">Design</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link--dark">Development</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link--dark">Marketing</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link--dark">See More</a>
+          </ul>
+        </div>
+        <ul class="footer__socialMedia" >
+          <li>
+            <a title="Go to facebook" class="icon" href="#"><img loading="lazy" src="./assets/images/facebook.svg" alt="facebook"></a>
+          </li>
+          <li>
+            <a title="Go to twitter" class="icon" href="#"><img loading="lazy" src="./assets/images/twitter.svg" alt="twitter"></a>
+          </li>
+          <li>
+            <a title="Go to instagram" class="icon" href="#"><img loading="lazy" src="./assets/images/instagram.svg" alt="instagram"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__copyright">
+          <p class="text">Copyright © 2022 Laaqiq.</p>
+          <p class="text">All Rights Reserved.</p>
+        </div>
+        <div class="footer__termsPolicy">
+          <p class="text--brownDark">Terms of Use</p>
+          <p class="text--brownDark">Privacy Policy</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/src/js/script.js"></script>
+</body>
 </html>
