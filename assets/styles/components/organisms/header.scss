@@ -1,0 +1,27 @@
+@mixin hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.header {
+  &__logo {
+    cursor: pointer;
+  }
+
+  &__list {
+    display: flex;
+    width: 32.1875rem;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__item {
+    color: #fff;
+    line-height: 3.2rem;
+
+    &:hover {
+      @include hover();
+    }
+  }
+}

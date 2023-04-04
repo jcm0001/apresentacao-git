@@ -1,0 +1,17 @@
+.button {  
+  cursor: pointer;
+  width: 138px;
+  height: 48px;
+  border-radius: 0.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.295743);
+  background-color: #28293E;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  &:hover {
+    background-color: #EF6D58;
+    transform: scale(1.1);
+    transition: all 0.3s;
+  }
+}
